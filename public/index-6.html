@@ -28,215 +28,182 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
+<body onload="return typewrite()" data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
 
-    <!--Navbar Start-->
-    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
-        <div class="container-fluid custom-container">
-            <a class="navbar-brand logo text-uppercase" href="index.html">
-                <img src="images/logo-dark.png" class="logo-light" alt="" height="32">
-                <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
-            </a>
+    <div id="ani-home">
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+            <div class="container-fluid custom-container">
+                <a class="navbar-brand logo text-uppercase" href="index.html">
+                    <img src="images/logo-dark.png" class="logo-light" alt="" height="32">
+                    <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
+                </a>
 
-            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
+                <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mx-auto navbar-center">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link ">Home</a>
-                    </li>
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a href="#service" class="nav-link ">Service</a>
-                    </li>
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a href="#features" class="nav-link ">Features</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto navbar-center">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a href="#service" class="nav-link ">Service</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a href="#features" class="nav-link ">Features</a>
+                        </li>
 
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a href="#user" class="nav-link ">User</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#pricing" class="nav-link">pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faq" class="nav-link">Faq</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#subscribe" class="nav-link">Subscribe</a>
-                    </li>
-                </ul>
-                <!--end navbar-nav-->
-            </div>
-
-
-            <!--end navabar-collapse-->
-            <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
-                <div class="list-inline-item dropdown language me-4">
-                    <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-web f-24 text-black"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a href="#user" class="nav-link ">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link">pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq" class="nav-link">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#subscribe" class="nav-link">Subscribe</a>
+                        </li>
                     </ul>
+                    <!--end navbar-nav-->
                 </div>
-                <div class="Account ">
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="mdi mdi-account-box-outline f-24 text-black"></i>
-                    </a>
 
+
+                <!--end navabar-collapse-->
+                <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
+                    <div class="list-inline-item dropdown language me-4">
+                        <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="mdi mdi-web f-24 "></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        </ul>
+                    </div>
+                    <div class="Account ">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="mdi mdi-account-box-outline f-24 "></i>
+                        </a>
+
+                    </div>
                 </div>
+                <!--end header-menu-->
             </div>
-            <!--end header-menu-->
-        </div>
-        <!--end container-->
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="row g-3 needs-validation">
-                        <div class="col-md-6">
-                            <label for="validationCustom01" class="form-label">First name <span
-                                    class="text-primary">*</span></label>
-                            <input type="text" class="form-control" id="validationCustom01" value="" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom02" class="form-label">Email <span
-                                    class="text-primary">*</span></label>
-                            <input type="email" class="form-control" id="validationCustom02" value="" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom03" class="form-label">Subject <span
-                                    class="text-primary">*</span></label>
-                            <input type="text" class="form-control" id="validationCustom03" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid city.
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom05" class="form-label">Password <span
-                                    class="text-primary">*</span></label>
-                            <input type="password" class="form-control" id="validationCustom05" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid zip.
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="validationTextarea" class="form-label">Textarea<span
-                                    class="text-primary">*</span></label>
-                            <textarea class="form-control" id="validationTextarea" required></textarea>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- end modal -->
+            <!--end container-->
+        </nav>
+        <!-- Navbar End -->
 
 
-
-
-    <!-- Hero Start -->
-    <section class="section home-2 bg-light pb-0" id="home">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class=" mb-4 text-dark ">Grow With Your Business &
-                        Be <span class="text-primary fw-medium">The Best Entrepreneur.</span></h1>
-                    <p class="text-muted fs-17">Launch your campaign and benefit from our expertise on designing and
-                        managing conversion centered bootstrap v5 html page. It seems that only fragments of the
-                        original text remain.</p>
-                    <button class="btn btn-primary mt-4">Learn More <span
-                            class="ms-2 right-icon">&#8594;</span></button>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="card p-5 border-0 box-shadow mt-5 mt-lg-0">
-                        <div class="text-center">
-                            <p class="text-muted mb-2 f-13 text-uppercase">Welcome To Xegal</p>
-                            <h5 class="form-dark mb-4">Get 30 Days Free Trial</h5>
-                        </div>
-                        <form class="registration-form">
-                            <div class="col-md-12">
-                                <label for="validationCustom001" class="form-label">First name <span
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation">
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">First name <span
                                         class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="validationCustom001" value="" required>
+                                <input type="text" class="form-control" id="validationCustom01" value="" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom002" class="form-label">Email <span
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">Email <span
                                         class="text-primary">*</span></label>
-                                <input type="email" class="form-control" id="validationCustom002" value="" required>
+                                <input type="email" class="form-control" id="validationCustom02" value="" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom005" class="form-label">Password <span
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">Subject <span
                                         class="text-primary">*</span></label>
-                                <input type="password" class="form-control" id="validationCustom005" required>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom05" class="form-label">Password <span
+                                        class="text-primary">*</span></label>
+                                <input type="password" class="form-control" id="validationCustom05" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid zip.
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 mt-4">Get Started <i
-                                    class="mdi mdi-telegram ms-2"></i></button>
+                            <div class="col-lg-12">
+                                <label for="validationTextarea" class="form-label">Textarea<span
+                                        class="text-primary">*</span></label>
+                                <textarea class="form-control" id="validationTextarea" required></textarea>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
+        <!-- end modal -->
 
-        <div class="bg-primary py-5 bg-text-content">
-            <div class="my-4">
-                <div class="container">
-                    <div class="row align-items-center justify-content-start">
-                        <div class="col-lg-7">
-                            <div class="text-start">
-                                <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-                                    deleniti omnis animi, quo perspiciatis dolore veniam laborum repudiandae ipsum quae
-                                    voluptatum ducimus, sunt saepe.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 ">
-                            <div class="text-lg-end text-start">
-                                <button class="btn btn-outline-white">Read More</button>
+
+        <!-- start home -->
+        <section class="bg-home6 overflow-hidden" id="home">
+            <div class="main-image " id="main-image">
+                <div id="imgcontainer-home6">
+                    <div id="inner-home6">
+                        <div class="demo-img">
+                            <div class="demo-overlay">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Hero End -->
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center">
+                            <i class="mdi mdi-crown f-36 text-muted"></i>
+                            <h1 class="text-black home-title mb-0">
+                                <span class="typewrite" data-period="2000"
+                                    data-type='[ "Professional Landing Page Template","We are Creative","We are Modern" ]'>
+                                    <span class="wrap"></span>
+                                </span>
+                            </h1>
+                            <h1 class="text-white home-title mb-0"><span class="element"
+                                    data-elements="Professional Landing Page Template,We are Creative,We are Modern"></span>
+                            </h1>
+                            <p class="home-4-desc text-muted mb-5 mt-3">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Quas et explicabo in quam ut expedita officia quidem eum tenetur
+                                adipisci suscipit ad maiores dolorem rerum repudiandae, officiis delectus facere
+                                sapiente?</p>
+                            <button class="btn btn-primary">read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end container-->
+        </section>
+        <!-- Hero End -->
+    </div>
 
 
     <!-- client section -->
@@ -1025,14 +992,12 @@
     </div>
 
 
-
-
     <!-- bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script src="js/tiny-slider.js"></script>
-    <script src="js/swiper.min.js"></script>
 
+    <script src="js/swiper.min.js"></script>
 
     <!-- counter -->
     <script src="js/counter.init.js"></script>
@@ -1040,25 +1005,27 @@
     <!-- Custom -->
     <script src="js/app.js"></script>
 
+
     <script>
 
-        var swiper = new Swiper(".hero-slider", {
-            direction: "horizontal",
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            effect: "coverflow",
-            cubeEffect: {
-                shadow: false,
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
+            (function () {
+                // Add event listener
+                document.addEventListener("mousemove", parallax);
+                const elem = document.querySelector("#ani-home");
+                // Magic happens here
+                function parallax(e) {
+                    let _w = window.innerWidth / 2;
+                    let _h = window.innerHeight / 2;
+                    let _mouseX = e.clientX;
+                    let _mouseY = e.clientY;
+                    let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                    let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                    let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+                    let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                    elem.style.backgroundPosition = x;
+                }
 
+            })();
 
     </script>
 

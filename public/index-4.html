@@ -99,6 +99,8 @@
     </nav>
     <!-- Navbar End -->
 
+
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -162,73 +164,25 @@
 
 
 
-
-    <!-- Hero Start -->
-    <section class="section home-2 bg-light pb-0" id="home">
+    <!-- start home section -->
+    <section class="section align-items-center bg-home-4 position-relative " id="home">
+        <div class="bg-overlay-image" style="background-image: url(images/home/bg-4.png);"></div>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class=" mb-4 text-dark ">Grow With Your Business &
-                        Be <span class="text-primary fw-medium">The Best Entrepreneur.</span></h1>
-                    <p class="text-muted fs-17">Launch your campaign and benefit from our expertise on designing and
-                        managing conversion centered bootstrap v5 html page. It seems that only fragments of the
-                        original text remain.</p>
-                    <button class="btn btn-primary mt-4">Learn More <span
-                            class="ms-2 right-icon">&#8594;</span></button>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="card p-5 border-0 box-shadow mt-5 mt-lg-0">
-                        <div class="text-center">
-                            <p class="text-muted mb-2 f-13 text-uppercase">Welcome To Xegal</p>
-                            <h5 class="form-dark mb-4">Get 30 Days Free Trial</h5>
-                        </div>
-                        <form class="registration-form">
-                            <div class="col-md-12">
-                                <label for="validationCustom001" class="form-label">First name <span
-                                        class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="validationCustom001" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom002" class="form-label">Email <span
-                                        class="text-primary">*</span></label>
-                                <input type="email" class="form-control" id="validationCustom002" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom005" class="form-label">Password <span
-                                        class="text-primary">*</span></label>
-                                <input type="password" class="form-control" id="validationCustom005" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid zip.
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100 mt-4">Get Started <i
-                                    class="mdi mdi-telegram ms-2"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-7">
+                    <div class="mt-4">
+                        <p class="headline f-18 text-uppercase text-dark">Earth is our home</p>
+                        <h1 class="home-title mt-2 mb-0">Grow Plant For A Better Life</h1>
+                        <p class="text-muted f-16 mt-4">Plants ipsum dolores sitam ametion consectetur adipss ing
+                            elit. Dignssimos provident ruisquam velsne molitia quiero,
+                            Obcaecti plant store praesentium!</p>
 
-        <div class="bg-primary py-5 bg-text-content">
-            <div class="my-4">
-                <div class="container">
-                    <div class="row align-items-center justify-content-start">
-                        <div class="col-lg-7">
-                            <div class="text-start">
-                                <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-                                    deleniti omnis animi, quo perspiciatis dolore veniam laborum repudiandae ipsum quae
-                                    voluptatum ducimus, sunt saepe.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 ">
-                            <div class="text-lg-end text-start">
-                                <button class="btn btn-outline-white">Read More</button>
+                        <div class="mt-5">
+                            <div class="serch-form">
+                                <form>
+                                    <input type="text" placeholder="Email">
+                                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -236,7 +190,7 @@
             </div>
         </div>
     </section>
-    <!-- Hero End -->
+    <!-- end section -->
 
 
     <!-- client section -->
@@ -554,7 +508,7 @@
 
     <!-- start cta -->
     <section class="cta section" id="cta-ani">
-        <div class="cta-image position-relative">
+        <div class="cta-image position-relative" id="">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
@@ -1033,34 +987,12 @@
     <script src="js/tiny-slider.js"></script>
     <script src="js/swiper.min.js"></script>
 
-
     <!-- counter -->
     <script src="js/counter.init.js"></script>
 
     <!-- Custom -->
     <script src="js/app.js"></script>
 
-    <script>
-
-        var swiper = new Swiper(".hero-slider", {
-            direction: "horizontal",
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            effect: "coverflow",
-            cubeEffect: {
-                shadow: false,
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-
-
-    </script>
 
 </body>
 

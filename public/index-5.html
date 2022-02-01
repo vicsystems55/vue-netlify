@@ -31,11 +31,11 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
 
     <!--Navbar Start-->
-    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top sticky nav-white" id="navbar">
         <div class="container-fluid custom-container">
-            <a class="navbar-brand logo text-uppercase" href="index.html">
-                <img src="images/logo-dark.png" class="logo-light" alt="" height="32">
-                <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
+            <a class="navbar-brand logo text-uppercase  nav-brand-logo" href="index.html">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="32">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="32">
             </a>
 
             <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
@@ -79,7 +79,7 @@
             <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
                 <div class="list-inline-item dropdown language me-4">
                     <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-web f-24 text-black"></i>
+                        <i class="mdi mdi-web f-24 "></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
                         <li><a class="dropdown-item" href="#">English</a></li>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="Account ">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="mdi mdi-account-box-outline f-24 text-black"></i>
+                        <i class="mdi mdi-account-box-outline f-24 "></i>
                     </a>
 
                 </div>
@@ -98,6 +98,8 @@
         <!--end container-->
     </nav>
     <!-- Navbar End -->
+
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -162,81 +164,133 @@
 
 
 
-
-    <!-- Hero Start -->
-    <section class="section home-2 bg-light pb-0" id="home">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class=" mb-4 text-dark ">Grow With Your Business &
-                        Be <span class="text-primary fw-medium">The Best Entrepreneur.</span></h1>
-                    <p class="text-muted fs-17">Launch your campaign and benefit from our expertise on designing and
-                        managing conversion centered bootstrap v5 html page. It seems that only fragments of the
-                        original text remain.</p>
-                    <button class="btn btn-primary mt-4">Learn More <span
-                            class="ms-2 right-icon">&#8594;</span></button>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="card p-5 border-0 box-shadow mt-5 mt-lg-0">
-                        <div class="text-center">
-                            <p class="text-muted mb-2 f-13 text-uppercase">Welcome To Xegal</p>
-                            <h5 class="form-dark mb-4">Get 30 Days Free Trial</h5>
+    <!-- start home -->
+    <section class="bg-home5" id="home">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-box active"
+                            style="background-image:url('images/home/home-5/img-1.jpg'); background-position: center; background-repeat: no-repeat;">
+                            <div class="bg-overlay"></div>
+                            <div class="home-center">
+                                <div class="home-desc-center">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-10">
+                                                <div class="home-content text-center text-white">
+                                                    <h1 class="home-title">We're Softland, A Creative Startup Based</h1>
+                                                    <p class="home-4-desc text-white-50 mt-4 f-15"> A digital web design
+                                                        studio creating modern & engaging online.
+                                                        Separated they live in by injected humour <br> going to use
+                                                        Bookmarksgrove right the Semantics, a
+                                                        large language ocean.</p>
+                                                    <div class="play-icon align-items-center justify-content-center">
+                                                        <div class="watch-video mt-4">
+                                                            <a href="" class="video-play-icon watch text-white"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#watchvideomodal">
+                                                                <i
+                                                                    class="mdi mdi-play text-center d-inline-block ms-lg-4 rounded-pill text-light bg-primary fs-20 avatar-md me-1"></i>
+                                                                Watch now !</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal fade bd-example-modal-lg" id="watchvideomodal"
+                                                        data-keyboard="false" tabindex="-1" aria-hidden="true">
+                                                        <div
+                                                            class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+                                                            <div class="modal-content hero-modal-0 bg-transparent">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                <video id="VisaChipCardVideo1" class="w-100" controls>
+                                                                    <source
+                                                                        src="https://www.w3schools.com/html/mov_bbb.mp4"
+                                                                        type="video/mp4" />
+                                                                    <!--Browser does not support <video> tag -->
+                                                                </video>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <form class="registration-form">
-                            <div class="col-md-12">
-                                <label for="validationCustom001" class="form-label">First name <span
-                                        class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="validationCustom001" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
+
+                        <div class="carousel-item carousel-box"
+                            style="background-image:url('images/home/home-5/img-2.jpg'); background-position: bottom; background-repeat: no-repeat;">
+                            <div class="bg-overlay"></div>
+                            <div class="home-center">
+                                <div class="home-desc-center">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-10">
+                                                <div class="home-content text-center text-white">
+                                                    <h1 class="home-title">Professional Business Page Template</h1>
+                                                    <p class="home-4-desc text-white-50 mt-4 f-15">A digital web design
+                                                        studio creating modern & engaging online.
+                                                        Separated they live in Bookmarksgrove right the Semantics, a
+                                                        large language ocean It has roots in a piece of classical Latin
+                                                        literature accusantium doloremque laudantium.</p>
+                                                    <div class="mt-4 pt-2">
+                                                        <a href=""
+                                                            class="btn btn-outline-primary btn-rounded mr-3">Contact
+                                                            Us <i class="mdi mdi-arrow-right ml-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom002" class="form-label">Email <span
-                                        class="text-primary">*</span></label>
-                                <input type="email" class="form-control" id="validationCustom002" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
+                        </div>
+
+                        <div class="carousel-item carousel-box"
+                            style="background-image:url('images/home/home-5/img-3.jpg'); background-position: bottom; background-repeat: no-repeat;">
+                            <div class="bg-overlay"></div>
+                            <div class="home-center">
+                                <div class="home-desc-center">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-10">
+                                                <div class="home-content text-center text-white">
+                                                    <h1 class="home-title">Experince True Business Performance</h1>
+                                                    <p class="home-4-desc text-white-50 mt-4 f-15">A digital web design
+                                                        studio creating modern & engaging online.
+                                                        Separated they live in Bookmarksgrove right the Semantics, a
+                                                        large language ocean randomised words which don't look even
+                                                        slightly believable.</p>
+                                                    <div class="mt-4 pt-2">
+                                                        <a href="" class="btn btn-primary btn-rounded mr-3">Contact
+                                                            Us <i class="mdi mdi-arrow-right ml-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom005" class="form-label">Password <span
-                                        class="text-primary">*</span></label>
-                                <input type="password" class="form-control" id="validationCustom005" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid zip.
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100 mt-4">Get Started <i
-                                    class="mdi mdi-telegram ms-2"></i></button>
-                        </form>
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="bg-primary py-5 bg-text-content">
-            <div class="my-4">
-                <div class="container">
-                    <div class="row align-items-center justify-content-start">
-                        <div class="col-lg-7">
-                            <div class="text-start">
-                                <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-                                    deleniti omnis animi, quo perspiciatis dolore veniam laborum repudiandae ipsum quae
-                                    voluptatum ducimus, sunt saepe.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 ">
-                            <div class="text-lg-end text-start">
-                                <button class="btn btn-outline-white">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- Hero End -->
+
 
 
     <!-- client section -->
@@ -283,7 +337,6 @@
         </div>
     </section>
     <!-- end section -->
-
 
     <!-- start service -->
     <section class="section bg-light" id="service">
@@ -361,7 +414,7 @@
                             <img src="images/features/img-1.png" alt="" class="img-fluid">
                         </div>
                         <div class="youtube-icon ">
-                            <a href="#watchvideomodal" data-bs-toggle="modal">
+                            <a href="#watchvideomodal1" data-bs-toggle="modal">
                                 <img src="images/features/youtube.png" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -427,12 +480,12 @@
         </div>
 
 
-        <div class="modal fade bd-example-modal-lg" id="watchvideomodal" data-keyboard="false" tabindex="-1"
+        <div class="modal fade bd-example-modal-lg" id="watchvideomodal1" data-keyboard="false" tabindex="-1"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
                 <div class="modal-content hero-modal-0 bg-transparent">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <video id="VisaChipCardVideo" class="w-100" controls="">
+                    <video id="VisaChipCardVideo09" class="w-100" controls="">
                         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                         <!--Browser does not support <video> tag -->
                     </video>
@@ -1025,42 +1078,21 @@
     </div>
 
 
-
-
     <!-- bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script src="js/tiny-slider.js"></script>
-    <script src="js/swiper.min.js"></script>
 
+    <script src="js/particles.js"></script>
+    <script src="js/particles.app.js"></script>
+
+    <script src="js/swiper.min.js"></script>
 
     <!-- counter -->
     <script src="js/counter.init.js"></script>
 
     <!-- Custom -->
     <script src="js/app.js"></script>
-
-    <script>
-
-        var swiper = new Swiper(".hero-slider", {
-            direction: "horizontal",
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            effect: "coverflow",
-            cubeEffect: {
-                shadow: false,
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-
-
-    </script>
 
 </body>
 

@@ -162,81 +162,52 @@
 
 
 
-
-    <!-- Hero Start -->
-    <section class="section home-2 bg-light pb-0" id="home">
+    <!-- start home section -->
+    <section class="section align-items-center bg-home-7 position-relative bg-light" id="home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class=" mb-4 text-dark ">Grow With Your Business &
-                        Be <span class="text-primary fw-medium">The Best Entrepreneur.</span></h1>
-                    <p class="text-muted fs-17">Launch your campaign and benefit from our expertise on designing and
-                        managing conversion centered bootstrap v5 html page. It seems that only fragments of the
-                        original text remain.</p>
-                    <button class="btn btn-primary mt-4">Learn More <span
-                            class="ms-2 right-icon">&#8594;</span></button>
+                <div class="col-lg-6 col-md-7 order-lg-1 order-2">
+                    <img src="images/home/homeB-7.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="card p-5 border-0 box-shadow mt-5 mt-lg-0">
-                        <div class="text-center">
-                            <p class="text-muted mb-2 f-13 text-uppercase">Welcome To Xegal</p>
-                            <h5 class="form-dark mb-4">Get 30 Days Free Trial</h5>
+                <div class="col-lg-6  order-lg-2 order-1">
+                    <div class="text-left my-5">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h6 class="mb-0">For Your Bussiness</h6>
+                                    <h1 class="f-80">Bussiness</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat commodi rerum,
+                                        odio sed ullam itaque aut! Distinctio, asperiores.</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6 class="mb-0">Work on Your Idea</h6>
+                                    <h1 class="f-80">Idea</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat commodi rerum,
+                                        odio sed ullam itaque aut! Distinctio, asperiores.
+                                </div>
+                                <div class="carousel-item">
+                                    <h6 class="mb-0">For Your Bussiness</h6>
+                                    <h1 class="f-80">LANDING</h1>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat commodi rerum,
+                                        odio sed ullam itaque aut! Distinctio, asperiores.
+                                </div>
+                            </div>
                         </div>
-                        <form class="registration-form">
-                            <div class="col-md-12">
-                                <label for="validationCustom001" class="form-label">First name <span
-                                        class="text-primary">*</span></label>
-                                <input type="text" class="form-control" id="validationCustom001" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom002" class="form-label">Email <span
-                                        class="text-primary">*</span></label>
-                                <input type="email" class="form-control" id="validationCustom002" value="" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12 mt-4">
-                                <label for="validationCustom005" class="form-label">Password <span
-                                        class="text-primary">*</span></label>
-                                <input type="password" class="form-control" id="validationCustom005" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid zip.
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100 mt-4">Get Started <i
-                                    class="mdi mdi-telegram ms-2"></i></button>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="bg-primary py-5 bg-text-content">
-            <div class="my-4">
-                <div class="container">
-                    <div class="row align-items-center justify-content-start">
-                        <div class="col-lg-7">
-                            <div class="text-start">
-                                <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-                                    deleniti omnis animi, quo perspiciatis dolore veniam laborum repudiandae ipsum quae
-                                    voluptatum ducimus, sunt saepe.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 ">
-                            <div class="text-lg-end text-start">
-                                <button class="btn btn-outline-white">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-    <!-- Hero End -->
+    <!-- end section -->
 
 
     <!-- client section -->
@@ -1026,13 +997,11 @@
 
 
 
-
     <!-- bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script src="js/tiny-slider.js"></script>
     <script src="js/swiper.min.js"></script>
-
 
     <!-- counter -->
     <script src="js/counter.init.js"></script>
@@ -1040,27 +1009,6 @@
     <!-- Custom -->
     <script src="js/app.js"></script>
 
-    <script>
-
-        var swiper = new Swiper(".hero-slider", {
-            direction: "horizontal",
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            effect: "coverflow",
-            cubeEffect: {
-                shadow: false,
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-
-
-    </script>
 
 </body>
 
